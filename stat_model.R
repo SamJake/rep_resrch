@@ -31,6 +31,7 @@ for(i in 1:55)
 
 
 
+
 predictionModel <- glm(numType~charDollar,family = binomial,data=trainSpam)
 predictionTest <- predict(predictionModel,testSpam)
 predictedSpam <- rep("nonspam",dim(testSpam)[1])
